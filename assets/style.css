@@ -15,16 +15,10 @@
     display: block;
 }
 
-.gp-left-title{
-    position: absolute;
-    right: 20px;
-    bottom: 100px;
-}
-
 .gp-left-description{
     position: absolute;
     right: 20px;
-    bottom: 0;
+    bottom: 50px;
     text-align: right;
 }
 
