@@ -22,6 +22,7 @@ const text = [
     'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,'
 ];
 
+const items = document.getElementsByClassName('')
 let contatore = 0;
 const up = document.querySelector('.gp-up');
 const down = document.querySelector('.gp-down');
@@ -30,5 +31,7 @@ console.log(up);
 console.log(down);
 
 down.addEventListener('click', function(){
-    
+    console.log();
+    contatore--;
+
 }
