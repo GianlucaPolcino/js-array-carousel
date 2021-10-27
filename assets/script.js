@@ -25,8 +25,8 @@ const text = [
 const imgLeft = document.getElementsByClassName('gp-hidden');
 const imgRight = document.getElementsByClassName('gp-right');
 let contatore = 0;
-const up = document.querySelector('.gp-up');
-const down = document.querySelector('.gp-down');
+const down = document.querySelector('.gp-up');
+const up = document.querySelector('.gp-down');
 
 console.log(up);
 console.log(down);
