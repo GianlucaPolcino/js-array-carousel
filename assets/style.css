@@ -12,13 +12,32 @@
     display: block;
 }
 
+.gp-left-title{
+    position: absolute;
+    right: 20px;
+    bottom: 100px;
+    display: none;
+}
+
+.gp-left-description{
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    text-align: right;
+    display: none;
+}
+
+.gp-left-text-active{
+    display: block;
+}
+
 .gp-right{
     height: 100px;
     filter: brightness(60%);
 }
 
 .active{
-    border: 4px solid white;
+    border: 3px solid white;
     filter: brightness(100%);
 }
 
