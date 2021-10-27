@@ -22,7 +22,8 @@ const text = [
     'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,'
 ];
 
-const items = document.getElementsByClassName('')
+const imgLeft = document.getElementsByClassName('gp-hidden');
+const imgRight = document.getElementsByClassName('gp-right');
 let contatore = 0;
 const up = document.querySelector('.gp-up');
 const down = document.querySelector('.gp-down');
@@ -31,7 +32,23 @@ console.log(up);
 console.log(down);
 
 down.addEventListener('click', function(){
-    console.log();
+    imgLeft[contatore].classList.remove('active');
+    imgRight[contatore].classList.remove('active2');
     contatore--;
 
-}
+    if(contatore < 0) contatore = imgLeft.length - 1;
+    imgLeft[contatore].classList.add('active');
+    imgRight[contatore].classList.add('active2');
+    console.log(imgLeft);
+})
+
+up.addEventListener('click', function(){
+    imgLeft[contatore].classList.remove('active');
+    imgRight[contatore].classList.remove('active2');
+    contatore++;
+
+    if(contatore > imgLeft.length - 1) contatore = 0;
+    imgLeft[contatore].classList.add('active');
+    imgRight[contatore].classList.add('active2');
+    console.log(imgRight);
+})

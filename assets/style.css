@@ -11,7 +11,7 @@
     display: none;
 }
 
-.gp-active{
+.gp-hidden.active{
     display: block;
 }
 
@@ -27,7 +27,7 @@
     filter: brightness(60%);
 }
 
-.active{
+.gp-right.active2{
     border: 3px solid white;
     filter: brightness(100%);
 }
