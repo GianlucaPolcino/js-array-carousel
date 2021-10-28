@@ -31,6 +31,40 @@ const up = document.querySelector('.gp-down');
 console.log(up);
 console.log(down);
 
+let col = document.querySelector('.col');
+let coldx = document.querySelector('.col-2');
+
+for (let i = 0; i < items.length; i++) {
+    const item = document.createElement('div');
+    const html = `
+    <img class = "gp-item gp-left" src = "assets/${items[i]}">
+    <div class="position-relative text-white">
+                       <div class="gp-left-description">
+                            <h2>${title[i]}</h2>
+                            <h5>${text[i]}</h5>
+                       </div>
+    </div>                
+    `;
+
+    const itemTwo = document.createElement('div');
+    const htmlTwo =`
+    <img class="gp-item gp-right" src="assets/${items[i]}" alt="">
+    `
+
+    item.classList.add('gp-hidden');
+    item.innerHTML = html;
+    itemTwo.innerHTML = htmlTwo;
+    
+    col.append(item);
+    coldx.append(itemTwo);
+
+    if (i === contatore){
+        item.classList.add('active');
+        itemTwo.classList.add('active2');
+    }
+}
+
+
 down.addEventListener('click', function(){
     imgLeft[contatore].classList.remove('active');
     imgRight[contatore].classList.remove('active2');

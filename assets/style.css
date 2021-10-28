@@ -46,6 +46,7 @@
     filter: brightness(70%);
     transition: 0.3s;
     cursor: pointer;
+    z-index: 999;
 }
 
 .gp-up{
@@ -53,7 +54,7 @@
 }
 
 .gp-down{
-    bottom: 6px;
+    top: 464px;
 }
 
 .gp-up:hover, .gp-down:hover{
